@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Chatbot </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-gray-300 font-sans">
+
+    <div class="container mx-auto p-6">
+        <div class="flex items-center justify-center mb-12">
+            <i class="fas fa-camera text-6xl text-gray-400 mr-4"></i>
+            <h1 class="text-4xl font-bold text-purple-300 shadow-md">DeepMediScan</h1>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            
+            <!-- Upload Image Card -->
+
+            </div>
+
+            <!-- Ask Question Card -->
+
+
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            
+
+
+
+
+            // Click to Upload button trigger
+            uploadBtn.addEventListener('click', () => {
+                imageUpload.click();
+            });
+
+            // Display uploaded image
+            imageUpload.addEventListener('change', (event) => {
+                const file = event.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = (e) => {
+                        displayImage.src = e.target.result;
+                        imageContainer.classList.remove('hidden');
+                    };
+                    reader.readAsDataURL(file);
+                }
+            });
+
+            // Submit Query
+            submitQuery.addEventListener('click', async () => {
+                const image = imageUpload.files[0];
+                const query = queryInput.value;
+
+                if (!image || !query) {
+                    showError('⚠️ Please upload an image and enter a query.');
+                    return;
+                }
+
+                const formData = new FormData();
+                formData.append('image', image);
+                formData.append('query', query);
+
+                try {
+                    submitQuery.disabled = true;
+                    submitQuery.textContent = 'Processing... ⏳';
+
+                    const response = await fetch('/upload_and_query', {
+                        method: 'POST',
+                        body: formData
+                    });
+
+                    const result = await response.json();
+
+                    if (!response.ok) {
+                        throw new Error(result.detail || 'An error occurred while processing your request.');
+                    }
+
+                    responseLlama.innerHTML = marked.parse(result.llama);
+                    responseLlama.classList.remove('hidden');
+                    responseLlava.innerHTML = marked.parse(result.llava);
+                    responseLlava.classList.remove('hidden');
+                    errorContainer.classList.add('hidden');
+                } catch (error) {
+                    console.error('Error:', error);
+
+    </script>
+
+</body>
+</html>

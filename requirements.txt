@@ -1,0 +1,6 @@
+fastapi
+pip install python-dotenv
+pip install python-multipart
+pip install uvicorn
+
+#python app.py -run program
