@@ -18,7 +18,7 @@ Ideal for clinical environments or healthcare apps that require quick preliminar
 with AI support — such as for radiologists, students, or remote diagnostics.
 
 
-## Project Preview:
+## Project Preview
 &nbsp;
 <a><img src=ui-images/homescreen.png height="600" width="600" /></a>
 
