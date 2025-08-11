@@ -22,8 +22,7 @@ with AI support — such as for radiologists, students, or remote diagnostics.
 &nbsp;
 <a><img src=ui-images/homescreen.png height="600" width="600" /></a>
 
-&nbsp;
-<a><img src=ui-images/Disease 1.jpg height="600" width="600" /></a>
+
 
 
 
