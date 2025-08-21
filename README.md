@@ -15,7 +15,9 @@ a)Image Upload Functionality: Users can easily upload clinical images for analys
 b)Interactive Query System: Users can ask natural language questions related to the uploaded image.
 
 c)AI-Powered Medical Responses: The app uses two versions of the LLaMA (Meta's LLM) model to provide dual AI responses for better clarity and comparison.
+
 d)Modern UI/UX: Developed using HTML, Tailwind CSS, and JavaScript for a sleek and responsive design.
+
 e)Backend with FastAPI:Handles image and query processing, model communication, and error handling.
 f)Secure API Integration:Utilizes GROQ’s LLaMA models with secure API key management via .env.
 
