@@ -9,7 +9,7 @@ user queries using Meta’s LLaMA models via GROQ API, built with FastAPI and a 
 
 ## Key Features:
 
-a) Image Upload Functionality: Users can easily upload clinical images for analysis.
+a)Image Upload Functionality: Users can easily upload clinical images for analysis.
 
 b)Interactive Query System: Users can ask natural language questions related to the uploaded image.
 
