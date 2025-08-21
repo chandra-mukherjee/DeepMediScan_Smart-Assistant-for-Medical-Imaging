@@ -28,6 +28,7 @@ f)Secure API Integration:Utilizes GROQ’s LLaMA models with secure API key mana
 Ideal for clinical environments or healthcare apps that require quick preliminary analysis from image-based medical data 
 with AI support — such as for radiologists, students, or remote diagnostics.
 
+
 ## Project Preview:
 
 
