@@ -1,4 +1,4 @@
-## DeepMediScan: The Smart  Assistant for Medical Imaging
+## DeepMediScan: The Smart Assistant for Medical Imaging
 
 ## Project Overview:
 
