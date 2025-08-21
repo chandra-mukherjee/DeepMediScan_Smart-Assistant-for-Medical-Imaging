@@ -19,6 +19,7 @@ c)AI-Powered Medical Responses: The app uses two versions of the LLaMA (Meta's L
 d)Modern UI/UX: Developed using HTML, Tailwind CSS, and JavaScript for a sleek and responsive design.
 
 e)Backend with FastAPI:Handles image and query processing, model communication, and error handling.
+
 f)Secure API Integration:Utilizes GROQ’s LLaMA models with secure API key management via .env.
 
 
