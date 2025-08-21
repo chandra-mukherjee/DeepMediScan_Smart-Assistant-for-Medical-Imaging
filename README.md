@@ -1,4 +1,4 @@
-## DeepMediScan
+## DeepMediScan: The Smart 
 
 ## Project Overview:
 
